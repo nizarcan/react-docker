@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    container_name: react-docker
+    image: react-docker-image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    
